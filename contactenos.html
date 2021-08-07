@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web en clase</title>
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
+</head>
+<body>
+    
+    <nav>
+        <ul class="menu">
+            <li class="logo"> 
+                <a href="#">
+                    <img src="./img/logo.png">
+                </a>
+            </li>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./contactenos.html">Contactenos</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">  <!-- Contenedor General -->
+        <h1> Jerarquia de productos </h1>
+       
+        <form>
+            <div id="mensaje"></div>
+            <div class="section-flex">
+
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="type">Tipo de mensaje</label>
+                    </div>
+                    <select id="type" name="type">
+                        <option value=""> Seleccione una opción</option>
+                        <option value="Cotizacion"> Cotización</option>
+                        <option value="Queja"> Queja</option>
+                        <option value="Saludo"> Saludo</option>
+                    </select>
+                </div>
+
+
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="name">Nombres</label>
+                    </div>
+                    <input type="text" id="name" name="name" placeholder="Ingrese su nombre">
+                </div>
+
+
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="age">Edad</label>
+                    </div>
+                    <input type="number" id="age" name="age" placeholder="Ingrese su edad">
+                </div>
+
+
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="comment">Comentarios</label>
+                    </div>
+                    <textarea id="comment" name="comment"> </textarea>
+                </div>
+
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="estudios">Que estudias?</label>
+                    </div>
+                    <input type="checkbox" id="chk1" name="chk1" value="html"> HTML
+                    <input type="checkbox" id="chk2" name="chk2" value="html"> CSS
+                    <input type="checkbox" id="chk3" name="chk3" value="html"> JAVASCRIPT
+                </div>
+
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="dia">Que dia es hoy</label>
+                    </div>
+                    <input type="radio" id="radio1" name="radi" value="html"> HTML
+                    <input type="radio" id="radio2" name="radi" value="html"> CSS
+                    <input type="radio" id="radio3" name="radi" value="html"> JAVASCRIPT
+                </div>
+
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="telefono">Telefono</label>
+                    </div>
+                    <input type="text" id="telefono" name="telefono" placeholder="Ingrese su telefono">
+                </div>
+
+                <div class="elemnt-form">
+                    <div class="label">
+                        <label for="date">Fecha</label>
+                    </div>
+                    <input type="date" id="date" name="date" placeholder="Ingrese fecha">
+                </div>
+
+
+                <div class="btn">
+                    <button type="submit" onclick="validar()"> Enviar Datos</button>
+                    <input type="button" onclick="validar()" value="Enviar">
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+
+    <footer>
+        <p>Creador Por Cristhian</p>
+    </footer>
+
+    <script src="./js/javascript.js"></script>
+
+</body>
+</html>
